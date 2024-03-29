@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: sans-serif;
+    
+}
+/**
+* !
+**/
+
+/**
+* ! NAV BAR STYLES ARE HERE
+**/
+.navbar{
+    background: #212529;
+    color: #ffff;
+    padding: 25px 60px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.cart{
+    position:relative;
+    background-color: #ffff;
+    color: black;
+    padding: 5px;
+  font-size: 30px;
+  border-radius: 4px;
+  /* display: flex;
+  flex-direction: column-reverse; */
+}
+.cart-amount{
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    font-size: 16px;
+    background-color: red;
+    color: #ffff;
+    padding: 5px;
+    border-radius: 3px;
+
+}
+
+
+.shop{
+    display: grid;
+    grid-template-columns: repeat(4,223px);
+    gap: 2rem;
+    justify-content: center;
+}
+
+@media (max-width: 500px) {
+    .shop{
+ grid-template-columns: repeat();
+    }
+}
+
+@media (max-width: 1000px) {
+    .shop{
+        grid-template-columns: repeat(1,223px);
+    }
+}
+.item{
+    border: 1px solid #212529;
+    border-radius: 4px;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+.price-quantity{
+display: flex;
+flex-direction:row;
+justify-content: space-between;
+
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+    font-size: 1rem;
+    }
+
+    .fa-minus{
+        color: red;
+    }
+    fa-plus{
+            color: green;
+    }
